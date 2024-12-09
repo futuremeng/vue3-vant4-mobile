@@ -73,6 +73,7 @@
 
 - [Vite](https://cn.vitejs.dev/) - 熟悉 `Vite` 特性
 - [Vue3](https://v3.vuejs.org/) - 熟悉 `Vue3` 基础语法
+- [Naive-UI](https://ui.naiveadmin.com/) - 熟悉 `Naive-UI` 组件基本使用
 - [Vant4](https://youzan.github.io/vant/v4/#/zh-CN) - 掌握 `vant4` 组件基本使用
 - [Pinia](https://pinia.vuejs.org/) - 熟悉 `Pinia` 特性
 - [TypeScript](https://www.typescriptlang.org/) - 熟悉 `TypeScript` 基本语法
