@@ -1,6 +1,14 @@
+/*
+ * @Author: be_loving@163.com
+ * @Date: 2024-12-09 15:56:38
+ * @LastEditors: be_loving@163.com
+ * @LastEditTime: 2024-12-09 16:50:23
+ * @FilePath: /vue3-vant4-mobile/build/vite/plugin/index.ts
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 import type { PluginOption } from 'vite'
 import Components from 'unplugin-vue-components/vite'
-import { VantResolver } from 'unplugin-vue-components/resolvers'
+import { NaiveUiResolver, VantResolver } from 'unplugin-vue-components/resolvers'
 import vue from '@vitejs/plugin-vue'
 import UnoCSS from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
@@ -30,7 +38,7 @@ export function createVitePlugins(viteEnv: ViteEnv, isBuild: boolean, prodMock: 
     // 按需引入VantUi且自动创建组件声明
     Components({
       dts: true,
-      resolvers: [VantResolver()],
+      resolvers: [VantResolver(), NaiveUiResolver()],
       types: [],
     }),
     // UnoCSS
@@ -49,6 +57,9 @@ export function createVitePlugins(viteEnv: ViteEnv, isBuild: boolean, prodMock: 
         'vue-router',
         'pinia',
         '@vueuse/core',
+        {
+          'naive-ui': ['useDialog', 'useMessage', 'useNotification', 'useLoadingBar'],
+        },
       ],
       dts: 'types/auto-imports.d.ts',
     }),

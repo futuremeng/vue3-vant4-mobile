@@ -47,6 +47,7 @@
     "echarts": "^5.4.3",
     "lodash-es": "^4.17.21",
     "mockjs": "^1.1.0",
+    "naive-ui": "^2.40.3",
     "nprogress": "^0.2.0",
     "pinia": "^2.1.7",
     "pinia-plugin-persist": "^1.0.0",

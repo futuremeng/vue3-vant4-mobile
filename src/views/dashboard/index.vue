@@ -21,6 +21,8 @@
           </van-swipe-item>
         </van-swipe>
       </div>
+      <n-button>naive-ui</n-button>
+      <van-button>默认按钮</van-button>
     </div>
   </div>
 </template>
